@@ -9,6 +9,8 @@
 </head>
 <body>
     <?php include 'header_component\header_component.php'; ?>
+    <?php include 'footer_component\footer_component.php'; ?>
+
 
 
     
