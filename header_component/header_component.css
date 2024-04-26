@@ -1,0 +1,29 @@
+header {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b6c1cd;
+    color: #eadddd;
+}
+
+.header {
+    background-color: #045539;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.animation {  
+    animation: translateTitle 2s ease-in-out forwards;
+    font-size: 50px;
+    margin-top: 0;
+    display: inline-block; /* Assure que la bordure s'adapte à la taille du texte */
+    padding: 20px 20px; /* Marge interne pour le texte */
+    border: 1px solid #fff; /* Bordure blanche de 2px */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+@keyframes translateTitle {
+    from { transform: translateY(-40%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
