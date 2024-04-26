@@ -3,10 +3,10 @@
 Ce projet a été réalisé dans le cadre du module de Système d'Exploitation. L'objectif est de créer un site web simple permettant à l'utilisateur de saisir le nom d'un pays et d'afficher des informations militaires à partir d'une base de données.
 
 ## Membres du Projet
-- El-Abida Rajae
-- Mohammed El Hauari
-- Mohammed Sadki
-- Ilias Maroun
+- El Abida Rajae
+- El Hauari Mohamed
+- Maroun Ilias
+- Sadki Mohamed
 
 ## Technologies Utilisées
 - Angular
