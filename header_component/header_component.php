@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="header_component.css">
+<link rel="stylesheet" href="header_component/header_component.css">
 
 <header class="header">
 

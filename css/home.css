@@ -1,0 +1,165 @@
+body {
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+    background-image: url('../images/background1.jpg');
+    background-color: rgba(255, 255, 255, 0.847);
+    background-blend-mode: overlay;
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.rechercher-cours {
+    
+    height: 50px;
+    width: 40%; 
+    align-self: center;
+
+    margin-top: 130px;
+    margin-bottom: 0; 
+
+    margin-left: 30%;
+    margin-right: 0.5%;
+
+    padding: 5px 5px;
+    padding-top: 0;
+
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+.btn_rechercher{
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border-width: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+
+
+.body-cours {
+    border: 10px solid  rgb(60, 121, 85);
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 30px;
+    padding-top: 20px;
+    margin-top:70px;
+
+    background-image: url('../images/background.jpg');
+    background-color: rgba(219, 228, 223, 0.978);
+    background-blend-mode: overlay;
+
+    border: none;
+
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border-radius: 8px;
+
+    margin-bottom: 70px;
+    padding-bottom: 60px;
+
+}
+
+.box-cours {
+    border: 1px solid rgb(23, 21, 21);
+    padding: 1% 5%;
+    background-color:  rgb(60, 121, 85);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    margin-left:14%;
+    border-radius: 8px;
+    position:relative;
+    padding-bottom:22px;
+    width:64%;
+    border: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.nom-du-cours{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    vertical-align:middle;
+    margin-top:10px;
+    color: #fff;
+}
+
+.button-contenu {
+    font-family: 'Montserrat', sans-serif;
+    height: 35px;
+    width: 20%;
+    right: 20px;
+    position: absolute;
+    top: 22px;
+    color:rgb(0,0,0);
+    border: none;
+    border-radius: 6px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; /* Ajout pour supprimer le soulignement */
+    display: inline-block; /* Ajout pour conserver les propriétés de bloc */
+    text-align: center; /* Ajout pour centrer le texte */
+    line-height: 35px; /* Ajout pour centrer verticalement le texte */
+
+    margin-top:10px;
+    margin: 0;
+    padding: 0;
+    vertical-align:middle;
+
+}
+
+.tite {
+
+    margin-bottom: 42px;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.682);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next line */
+    justify-content: space-around; /* Distributes space around items */
+}
+
+.box-cours1 {
+    width: 30%; /* Each box will take up roughly 30% of the container width */
+    margin: 1%; /* Adds a little space around each box */
+    text-align: center; /* Centers the text inside the box */
+    padding: 5px; /* Adds some padding inside the box */
+    box-sizing: border-box; /* Includes padding and border in the element's width */
+
+    border: 1px solid rgb(23, 21, 21);
+    
+    background-color:  rgb(60, 121, 85);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    
+   
+    border-radius: 8px;
+    position:relative;
+    padding-bottom:22px;
+    
+    border: none;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    color: white;
+    padding-bottom: 5px;
+}
+
+
