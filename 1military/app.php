@@ -22,7 +22,7 @@ if(isset($_POST['search'])) {
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <?php include 'header_component\header_component.php'; ?>
+    <?php include 'header_component/header_component.php'; ?>
 
     <div class="content-wrapper">
 
@@ -58,6 +58,6 @@ if(isset($_POST['search'])) {
 </div>
 
 
-    <?php include 'footer_component\footer_component.php'; ?>
+    <?php include 'footer_component/footer_component.php'; ?>
 </body>
 </html>
