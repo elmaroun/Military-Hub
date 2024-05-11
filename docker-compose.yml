@@ -1,6 +1,7 @@
 version: '3.8'
 
 services:
+  # MySQL service
   mysql:
     image: mysql:5.7
     environment:
@@ -9,47 +10,25 @@ services:
       MYSQL_USER: rooot
       MYSQL_PASSWORD: password
     volumes:
-      - ./1military/db:/docker-entrypoint-initdb.d
+      - ./1military/db:/docker-entrypoint-initdb.d  # Mount database initialization scripts
     ports:
-      - "3306:3306"
-    networks:
-      - app-network
+      - "3306:3306"  # Map container port 3306 to host port 3306
 
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    environment:
-      PMA_HOST: mysql
-      PMA_PORT: 3306
-    ports:
-      - "8001:80"
-    networks:
-      - app-network
-
+  # PHP service
   php:
     image: mudocker001/envi
     volumes:
-      - ./:/var/www/html
+      - ./:/var/www/html  # Mount project directory
     ports:
-      - "80:80"
-    networks:
-      - app-network
+      - "80:80"  # Map container port 80 to host port 80
 
+  # Nginx service
   nginx:
     image: nginx:latest
     container_name: nginx-proxy
     ports:
-      - "8080:80"  # Changed to avoid conflict if 80 is already in use on the host
+      - "8080:80"  # Map container port 80 to host port 8080
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf
-      - ./:/usr/share/nginx/html  # Nginx uses /usr/share/nginx/html by default
+      - ./:/usr/share/nginx/html  # Mount project directory
     depends_on:
-      - php  # Depend on the PHP service which likely serves as the 'web' service
-    networks:
-      - app-network
-
-networks:
-  app-network:
-    driver: bridge
-
-volumes:
-  db-data: {}
+      - php  # Depend on PHP service
